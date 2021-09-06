@@ -33,7 +33,7 @@ public class hoadonDAO {
     public boolean AddHD(Hoadon hd){
         String sql="INSERT INTO `hoadon`"
                 + "(`idHoadon`, `idNV`, `idKH`, `TongGia`, `ngayLap`) VALUES"
-                + " ('"+hd.getIdHoaDon()+"','"+hd.getIdNhanvien()+"','"+hd.getIdKhachhang()+"','"+hd.getTongGia()+"','"+hd.getNgayLap()+"')";                
+                + " ('"+hd.getIdHoaDon()+"','"+hd.getIdNhanvien()+"','"+hd.getIdKhachhang()+"','"+hd.getTongGia()+"','"+hd.getNgayLap()+"')";
         boolean rs=connectionDAO.sqlUpdate(sql);
         connectionDAO.closeConnection();
         return rs;

@@ -577,6 +577,10 @@ public void exportExcel(JTable table) {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        Jdialogghe.setBackground(new java.awt.Color(237, 237, 237));
+
+        jPanel2.setBackground(new java.awt.Color(237, 237, 237));
+
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("G");
@@ -644,6 +648,8 @@ public void exportExcel(JTable table) {
         jLabel23.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel23.setText("2");
+
+        jPanel3.setBackground(new java.awt.Color(237, 237, 237));
 
         jPanel4.setBackground(new java.awt.Color(255, 204, 204));
         jPanel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -3256,6 +3262,10 @@ public void exportExcel(JTable table) {
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
+        jPanel79.setBackground(new java.awt.Color(253, 248, 248));
+
+        jPanel80.setBackground(new java.awt.Color(248, 227, 227));
+
         jLabel99.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel99.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel99.setText("Sửa thông tin Khách Hàng");
@@ -3280,6 +3290,7 @@ public void exportExcel(JTable table) {
 
         jTextField27.setBorder(javax.swing.BorderFactory.createTitledBorder("SĐT"));
 
+        jButton12.setBackground(new java.awt.Color(255, 204, 51));
         jButton12.setText("Sửa");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3356,6 +3367,10 @@ public void exportExcel(JTable table) {
             .addComponent(jPanel79, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jPanel81.setBackground(new java.awt.Color(253, 248, 248));
+
+        jPanel82.setBackground(new java.awt.Color(248, 227, 227));
+
         jLabel100.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel100.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel100.setText("Thêm Phim");
@@ -3382,6 +3397,7 @@ public void exportExcel(JTable table) {
 
         jTextField15.setBorder(javax.swing.BorderFactory.createTitledBorder("Thể loại"));
 
+        jButton8.setBackground(new java.awt.Color(255, 204, 51));
         jButton8.setText("Thêm");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3458,7 +3474,7 @@ public void exportExcel(JTable table) {
                 .addGroup(jPanel81Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                 .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37))
         );
@@ -3473,10 +3489,12 @@ public void exportExcel(JTable table) {
         );
         AddPhimLayout.setVerticalGroup(
             AddPhimLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AddPhimLayout.createSequentialGroup()
-                .addGap(0, 11, Short.MAX_VALUE)
-                .addComponent(jPanel81, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jPanel81, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
+
+        jPanel83.setBackground(new java.awt.Color(253, 248, 248));
+
+        jPanel84.setBackground(new java.awt.Color(248, 227, 227));
 
         jLabel101.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel101.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3502,6 +3520,7 @@ public void exportExcel(JTable table) {
 
         jTextField24.setBorder(javax.swing.BorderFactory.createTitledBorder("SĐT"));
 
+        jButton11.setBackground(new java.awt.Color(255, 204, 51));
         jButton11.setText("Thêm");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3578,6 +3597,10 @@ public void exportExcel(JTable table) {
             .addComponent(jPanel83, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        jPanel85.setBackground(new java.awt.Color(253, 248, 248));
+
+        jPanel86.setBackground(new java.awt.Color(248, 227, 227));
+
         jLabel102.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel102.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel102.setText("Sửa thông tin phim");
@@ -3602,6 +3625,7 @@ public void exportExcel(JTable table) {
 
         jTextField42.setBorder(javax.swing.BorderFactory.createTitledBorder("Ngôn ngữ"));
 
+        jButton17.setBackground(new java.awt.Color(255, 204, 51));
         jButton17.setText("Sửa");
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4083,7 +4107,7 @@ public void exportExcel(JTable table) {
                         .addGap(49, 49, 49))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDatveLayout.createSequentialGroup()
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(230, 230, 230))))
+                        .addGap(209, 209, 209))))
             .addGroup(panelDatveLayout.createSequentialGroup()
                 .addGap(98, 98, 98)
                 .addGroup(panelDatveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -5358,7 +5382,7 @@ public void exportExcel(JTable table) {
             cthd.setGia(Integer.parseInt((String) tblhoadon.getValueAt(i,7)));
             chiTietHoaDonBUS cthd_BUS = new chiTietHoaDonBUS();
             if (cthd_BUS.AddCTHD(cthd)) {
-            JOptionPane.showMessageDialog(null, "Thêm chi tiết hóa đơn thành công");
+
         } else
             JOptionPane.showMessageDialog(null, "Thêm chi tiết hóa đơn thất bại");
         }

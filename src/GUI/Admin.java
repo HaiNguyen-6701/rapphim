@@ -46,6 +46,7 @@ import java.sql.PreparedStatement;
 import java.sql.DriverManager;
 import java.sql.Connection;
 import java.sql.SQLException;
+import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import static javax.swing.JOptionPane.showMessageDialog;
 import javax.swing.JTable;
@@ -135,6 +136,21 @@ public class Admin extends javax.swing.JFrame {
             g2d.fillRect(0, 0, width, height);
         }
     }
+    class JbuttonGradiant extends JButton{
+        protected void paintButton(Graphics g) {
+            Graphics2D g2d = (Graphics2D) g;
+            int width = getWidth();
+            int height = getHeight();
+
+            Color color1 = new Color(255,103,108);
+            Color color2 = new Color(255,140,197);
+
+            GradientPaint gp = new GradientPaint(0, 0, color1, 180, height, color2);
+            g2d.setPaint(gp);
+            g2d.fillRect(0, 0, width, height);
+        }
+    }
+    
 
     public void showNV() {
         Vector header = new Vector();
@@ -465,7 +481,7 @@ public void exportExcel(JTable table) {
         tblNV = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jButton34 = new javax.swing.JButton();
+        jButton34 = new JbuttonGradiant();
         jButton35 = new javax.swing.JButton();
         jButton36 = new javax.swing.JButton();
         jButton37 = new javax.swing.JButton();
@@ -530,9 +546,15 @@ public void exportExcel(JTable table) {
         jButton14 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
 
+        AddNV.setBackground(new java.awt.Color(255, 204, 102));
+
+        jPanel4.setBackground(new java.awt.Color(253, 248, 248));
+
+        jPanel6.setBackground(new java.awt.Color(248, 227, 227));
+
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Thêm nhân viên");
+        jLabel8.setText("THÊM NHÂN VIÊN");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -556,6 +578,7 @@ public void exportExcel(JTable table) {
 
         jTextField7.setBorder(javax.swing.BorderFactory.createTitledBorder("SĐT"));
 
+        jComboBox1.setBackground(new java.awt.Color(221, 147, 147));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chức vụ", "Admin", "Nhân viên" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -563,6 +586,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jComboBox2.setBackground(new java.awt.Color(221, 147, 147));
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Giới tính", "Nam", "Nữ" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -570,6 +594,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton5.setBackground(new java.awt.Color(255, 204, 51));
         jButton5.setText("Thêm");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -636,6 +661,12 @@ public void exportExcel(JTable table) {
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        AddPhim.setBackground(new java.awt.Color(248, 227, 227));
+
+        jPanel8.setBackground(new java.awt.Color(253, 248, 248));
+
+        jPanel9.setBackground(new java.awt.Color(248, 227, 227));
+
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("Thêm Phim");
@@ -648,7 +679,7 @@ public void exportExcel(JTable table) {
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
                 .addContainerGap())
@@ -662,6 +693,7 @@ public void exportExcel(JTable table) {
 
         jTextField8.setBorder(javax.swing.BorderFactory.createTitledBorder("Thể loại"));
 
+        jButton8.setBackground(new java.awt.Color(255, 204, 51));
         jButton8.setText("Thêm");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -738,7 +770,7 @@ public void exportExcel(JTable table) {
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                 .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37))
         );
@@ -753,10 +785,12 @@ public void exportExcel(JTable table) {
         );
         AddPhimLayout.setVerticalGroup(
             AddPhimLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AddPhimLayout.createSequentialGroup()
-                .addGap(0, 11, Short.MAX_VALUE)
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
+
+        jPanel10.setBackground(new java.awt.Color(253, 248, 248));
+
+        jPanel11.setBackground(new java.awt.Color(248, 227, 227));
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -782,6 +816,7 @@ public void exportExcel(JTable table) {
 
         jTextField18.setBorder(javax.swing.BorderFactory.createTitledBorder("SĐT"));
 
+        jButton11.setBackground(new java.awt.Color(255, 204, 51));
         jButton11.setText("Thêm");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -858,6 +893,10 @@ public void exportExcel(JTable table) {
             .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        jPanel12.setBackground(new java.awt.Color(253, 248, 248));
+
+        jPanel13.setBackground(new java.awt.Color(248, 227, 227));
+
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("Sửa thông tin nhân viên");
@@ -898,6 +937,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton16.setBackground(new java.awt.Color(255, 204, 51));
         jButton16.setText("Sửa");
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1002,6 +1042,10 @@ public void exportExcel(JTable table) {
             .addComponent(jPanel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        jPanel14.setBackground(new java.awt.Color(253, 248, 248));
+
+        jPanel15.setBackground(new java.awt.Color(248, 227, 227));
+
         jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("Sửa thông tin Khách Hàng");
@@ -1026,6 +1070,7 @@ public void exportExcel(JTable table) {
 
         jTextField27.setBorder(javax.swing.BorderFactory.createTitledBorder("SĐT"));
 
+        jButton12.setBackground(new java.awt.Color(255, 204, 51));
         jButton12.setText("Sửa");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1102,6 +1147,10 @@ public void exportExcel(JTable table) {
             .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jPanel16.setBackground(new java.awt.Color(253, 248, 248));
+
+        jPanel17.setBackground(new java.awt.Color(248, 227, 227));
+
         jLabel20.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel20.setText("Thêm tài khoản");
@@ -1128,6 +1177,7 @@ public void exportExcel(JTable table) {
 
         jTextField38.setBorder(javax.swing.BorderFactory.createTitledBorder("Mật khẩu"));
 
+        jButton15.setBackground(new java.awt.Color(255, 204, 51));
         jButton15.setText("Thêm");
         jButton15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1191,6 +1241,10 @@ public void exportExcel(JTable table) {
                 .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        jPanel18.setBackground(new java.awt.Color(253, 248, 248));
+
+        jPanel19.setBackground(new java.awt.Color(248, 227, 227));
+
         jLabel23.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel23.setText("Sửa thông tin phim");
@@ -1215,6 +1269,7 @@ public void exportExcel(JTable table) {
 
         jTextField42.setBorder(javax.swing.BorderFactory.createTitledBorder("Ngôn ngữ"));
 
+        jButton17.setBackground(new java.awt.Color(255, 204, 51));
         jButton17.setText("Sửa");
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1336,6 +1391,7 @@ public void exportExcel(JTable table) {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/administrator.png"))); // NOI18N
         jLabel1.setText("Admin");
 
+        jButton4.setBackground(new java.awt.Color(237, 237, 237));
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-thick-long-right-arrow-256.png"))); // NOI18N
         jButton4.setText("Thoát");
@@ -1587,6 +1643,7 @@ public void exportExcel(JTable table) {
             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
         );
 
+        jButton34.setBackground(new java.awt.Color(237, 237, 237));
         jButton34.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-plus-64.png"))); // NOI18N
         jButton34.setText("Thêm");
@@ -1597,6 +1654,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton35.setBackground(new java.awt.Color(237, 237, 237));
         jButton35.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-minus-64.png"))); // NOI18N
         jButton35.setText("Sửa");
@@ -1607,6 +1665,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton36.setBackground(new java.awt.Color(237, 237, 237));
         jButton36.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-delete-64.png"))); // NOI18N
         jButton36.setText("Xóa");
@@ -1617,6 +1676,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton37.setBackground(new java.awt.Color(237, 237, 237));
         jButton37.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-refresh-64.png"))); // NOI18N
         jButton37.setText("Làm mới");
@@ -1643,6 +1703,7 @@ public void exportExcel(JTable table) {
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Tìm kiếm nhân viên:");
 
+        jButton2.setBackground(new java.awt.Color(237, 237, 237));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/search.png"))); // NOI18N
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -1652,6 +1713,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton6.setBackground(new java.awt.Color(237, 237, 237));
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-microsoft-excel-2019-48 .png"))); // NOI18N
         jButton6.setText("Excel");
         jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -1759,6 +1821,7 @@ public void exportExcel(JTable table) {
             .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
         );
 
+        jButton38.setBackground(new java.awt.Color(237, 237, 237));
         jButton38.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-plus-64.png"))); // NOI18N
         jButton38.setText("Thêm");
@@ -1769,6 +1832,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton39.setBackground(new java.awt.Color(237, 237, 237));
         jButton39.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-minus-64.png"))); // NOI18N
         jButton39.setText("Sửa");
@@ -1779,6 +1843,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton40.setBackground(new java.awt.Color(237, 237, 237));
         jButton40.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-delete-64.png"))); // NOI18N
         jButton40.setText("Xóa");
@@ -1789,6 +1854,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton41.setBackground(new java.awt.Color(237, 237, 237));
         jButton41.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-refresh-64.png"))); // NOI18N
         jButton41.setText("Làm mới");
@@ -1814,6 +1880,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton3.setBackground(new java.awt.Color(237, 237, 237));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/search.png"))); // NOI18N
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -1823,6 +1890,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton1.setBackground(new java.awt.Color(237, 237, 237));
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-microsoft-excel-2019-48 .png"))); // NOI18N
         jButton1.setText("Excel");
@@ -1940,6 +2008,7 @@ public void exportExcel(JTable table) {
             .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
         );
 
+        jButton42.setBackground(new java.awt.Color(237, 237, 237));
         jButton42.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-plus-64.png"))); // NOI18N
         jButton42.setText("Thêm");
@@ -1950,6 +2019,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton43.setBackground(new java.awt.Color(237, 237, 237));
         jButton43.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-minus-64.png"))); // NOI18N
         jButton43.setText("Sửa");
@@ -1960,6 +2030,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton44.setBackground(new java.awt.Color(237, 237, 237));
         jButton44.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-delete-64.png"))); // NOI18N
         jButton44.setText("Xóa");
@@ -1970,6 +2041,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton45.setBackground(new java.awt.Color(237, 237, 237));
         jButton45.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-refresh-64.png"))); // NOI18N
         jButton45.setText("Làm mới");
@@ -1984,6 +2056,7 @@ public void exportExcel(JTable table) {
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("Tìm kiếm khách hàng:");
 
+        jButton7.setBackground(new java.awt.Color(237, 237, 237));
         jButton7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-microsoft-excel-2019-48 .png"))); // NOI18N
         jButton7.setText("Excel");
@@ -1994,6 +2067,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton20.setBackground(new java.awt.Color(237, 237, 237));
         jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/search.png"))); // NOI18N
         jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2126,6 +2200,7 @@ public void exportExcel(JTable table) {
         });
         jScrollPane5.setViewportView(tblCTHD);
 
+        jButton47.setBackground(new java.awt.Color(237, 237, 237));
         jButton47.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-minus-64.png"))); // NOI18N
         jButton47.setText("Sửa");
@@ -2136,6 +2211,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton48.setBackground(new java.awt.Color(237, 237, 237));
         jButton48.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-delete-64.png"))); // NOI18N
         jButton48.setText("Xóa");
@@ -2149,6 +2225,7 @@ public void exportExcel(JTable table) {
         jLabel22.setForeground(new java.awt.Color(255, 153, 102));
         jLabel22.setText("Chi tiết hóa đơn");
 
+        jButton9.setBackground(new java.awt.Color(237, 237, 237));
         jButton9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-microsoft-excel-2019-48 .png"))); // NOI18N
         jButton9.setText("Excel");
@@ -2170,6 +2247,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton18.setBackground(new java.awt.Color(237, 237, 237));
         jButton18.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/search.png"))); // NOI18N
         jButton18.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -2179,6 +2257,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton19.setBackground(new java.awt.Color(237, 237, 237));
         jButton19.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-refresh-64.png"))); // NOI18N
         jButton19.setText("Làm mới");
@@ -2293,6 +2372,7 @@ public void exportExcel(JTable table) {
             .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
         );
 
+        jButton30.setBackground(new java.awt.Color(237, 237, 237));
         jButton30.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-plus-64.png"))); // NOI18N
         jButton30.setText("Thêm");
@@ -2303,6 +2383,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton31.setBackground(new java.awt.Color(237, 237, 237));
         jButton31.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-delete-64.png"))); // NOI18N
         jButton31.setText("Xóa");
@@ -2313,6 +2394,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton32.setBackground(new java.awt.Color(237, 237, 237));
         jButton32.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-minus-64.png"))); // NOI18N
         jButton32.setText("Sửa");
@@ -2323,6 +2405,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton33.setBackground(new java.awt.Color(237, 237, 237));
         jButton33.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-refresh-64.png"))); // NOI18N
         jButton33.setText("Làm mới");
@@ -2337,6 +2420,7 @@ public void exportExcel(JTable table) {
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("Tìm ID nhân viên:");
 
+        jButton14.setBackground(new java.awt.Color(237, 237, 237));
         jButton14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/search.png"))); // NOI18N
         jButton14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -2346,6 +2430,7 @@ public void exportExcel(JTable table) {
             }
         });
 
+        jButton10.setBackground(new java.awt.Color(237, 237, 237));
         jButton10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-microsoft-excel-2019-48 .png"))); // NOI18N
         jButton10.setText("Excel");
