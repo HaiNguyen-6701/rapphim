@@ -460,6 +460,18 @@ public void exportExcel(JTable table) {
         jTextField47 = new javax.swing.JTextField();
         jTextField48 = new javax.swing.JTextField();
         jTextField49 = new javax.swing.JTextField();
+        EditTK = new javax.swing.JDialog();
+        jPanel20 = new javax.swing.JPanel();
+        jPanel21 = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jTextField51 = new javax.swing.JTextField();
+        jTextField52 = new javax.swing.JTextField();
+        jTextField53 = new javax.swing.JTextField();
+        jTextField54 = new javax.swing.JTextField();
+        jButton21 = new javax.swing.JButton();
+        jLabel26 = new javax.swing.JLabel();
+        jRadioButton5 = new javax.swing.JRadioButton();
+        jRadioButton6 = new javax.swing.JRadioButton();
         RootAdmin = new javax.swing.JPanel();
         MenuAdmin = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -523,7 +535,6 @@ public void exportExcel(JTable table) {
         tblHD = new javax.swing.JTable();
         jScrollPane5 = new javax.swing.JScrollPane();
         tblCTHD = new javax.swing.JTable();
-        jButton47 = new javax.swing.JButton();
         jButton48 = new javax.swing.JButton();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
@@ -531,7 +542,6 @@ public void exportExcel(JTable table) {
         jLabel24 = new javax.swing.JLabel();
         jTextField50 = new javax.swing.JTextField();
         jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
         PanelTaikhoan = new JPanelGradiant();
         jScrollPane6 = new javax.swing.JScrollPane();
         tblTK = new javax.swing.JTable();
@@ -915,6 +925,7 @@ public void exportExcel(JTable table) {
                 .addContainerGap())
         );
 
+        jTextField17.setEditable(false);
         jTextField17.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField17.setBorder(javax.swing.BorderFactory.createTitledBorder("ID Nhân viên"));
         jTextField17.addActionListener(new java.awt.event.ActionListener() {
@@ -1000,7 +1011,7 @@ public void exportExcel(JTable table) {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(185, 185, 185))
+                .addGap(163, 163, 163))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1064,6 +1075,7 @@ public void exportExcel(JTable table) {
                 .addContainerGap())
         );
 
+        jTextField25.setEditable(false);
         jTextField25.setBorder(javax.swing.BorderFactory.createTitledBorder("ID Khách Hàng"));
 
         jTextField26.setBorder(javax.swing.BorderFactory.createTitledBorder("Họ Tên"));
@@ -1263,6 +1275,7 @@ public void exportExcel(JTable table) {
                 .addContainerGap())
         );
 
+        jTextField40.setEditable(false);
         jTextField40.setBorder(javax.swing.BorderFactory.createTitledBorder("ID Phim"));
 
         jTextField41.setBorder(javax.swing.BorderFactory.createTitledBorder("Thể loại"));
@@ -1378,6 +1391,134 @@ public void exportExcel(JTable table) {
         EditPhimLayout.setVerticalGroup(
             EditPhimLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel20.setBackground(new java.awt.Color(253, 248, 248));
+
+        jPanel21.setBackground(new java.awt.Color(248, 227, 227));
+
+        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel25.setText("Sửa thông tin tài khoản");
+
+        javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
+        jPanel21.setLayout(jPanel21Layout);
+        jPanel21Layout.setHorizontalGroup(
+            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel21Layout.setVerticalGroup(
+            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel21Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jTextField51.setEditable(false);
+        jTextField51.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField51.setBorder(javax.swing.BorderFactory.createTitledBorder("ID Nhân viên"));
+        jTextField51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField51ActionPerformed(evt);
+            }
+        });
+
+        jTextField52.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField52.setBorder(javax.swing.BorderFactory.createTitledBorder("Tên đăng nhập"));
+
+        jTextField53.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField53.setBorder(javax.swing.BorderFactory.createTitledBorder("Tên nhân viên"));
+
+        jTextField54.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField54.setBorder(javax.swing.BorderFactory.createTitledBorder("Mật khẩu"));
+        jTextField54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField54ActionPerformed(evt);
+            }
+        });
+
+        jButton21.setBackground(new java.awt.Color(255, 204, 51));
+        jButton21.setText("Sửa");
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton21ActionPerformed(evt);
+            }
+        });
+
+        jLabel26.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel26.setText("Chức vụ:");
+
+        buttonGroup2.add(jRadioButton5);
+        jRadioButton5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jRadioButton5.setText("Admin");
+        jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton5ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup2.add(jRadioButton6);
+        jRadioButton6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jRadioButton6.setText("Nhân viên");
+
+        javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
+        jPanel20.setLayout(jPanel20Layout);
+        jPanel20Layout.setHorizontalGroup(
+            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel20Layout.createSequentialGroup()
+                .addGap(112, 112, 112)
+                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField52, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField51, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField54, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField53, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel20Layout.createSequentialGroup()
+                        .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jRadioButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jRadioButton6)))
+                .addContainerGap(117, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel20Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(185, 185, 185))
+        );
+        jPanel20Layout.setVerticalGroup(
+            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel20Layout.createSequentialGroup()
+                .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jTextField51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jTextField52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jTextField54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jTextField53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
+                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel26)
+                    .addComponent(jRadioButton5)
+                    .addComponent(jRadioButton6))
+                .addGap(61, 61, 61)
+                .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(35, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout EditTKLayout = new javax.swing.GroupLayout(EditTK.getContentPane());
+        EditTK.getContentPane().setLayout(EditTKLayout);
+        EditTKLayout.setHorizontalGroup(
+            EditTKLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EditTKLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        EditTKLayout.setVerticalGroup(
+            EditTKLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -2097,9 +2238,9 @@ public void exportExcel(JTable table) {
                                 .addGap(62, 62, 62))
                             .addGroup(PanelKHLayout.createSequentialGroup()
                                 .addComponent(jButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(66, 66, 66)
+                                .addGap(87, 87, 87)
                                 .addComponent(jButton43, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(66, 66, 66)
+                                .addGap(45, 45, 45)
                                 .addComponent(jButton44, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(66, 66, 66)
                         .addComponent(jButton45)
@@ -2121,12 +2262,13 @@ public void exportExcel(JTable table) {
                     .addGroup(PanelKHLayout.createSequentialGroup()
                         .addComponent(jButton20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(18, 18, 18)))
-                .addGroup(PanelKHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton43, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton44, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton45, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(PanelKHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PanelKHLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton44, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton45, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton43, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(147, 147, 147))
@@ -2200,22 +2342,16 @@ public void exportExcel(JTable table) {
         });
         jScrollPane5.setViewportView(tblCTHD);
 
-        jButton47.setBackground(new java.awt.Color(237, 237, 237));
-        jButton47.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-minus-64.png"))); // NOI18N
-        jButton47.setText("Sửa");
-        jButton47.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton47.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton47ActionPerformed(evt);
-            }
-        });
-
         jButton48.setBackground(new java.awt.Color(237, 237, 237));
         jButton48.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-delete-64.png"))); // NOI18N
         jButton48.setText("Xóa");
         jButton48.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton48ActionPerformed(evt);
+            }
+        });
 
         jLabel21.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(255, 153, 102));
@@ -2257,11 +2393,6 @@ public void exportExcel(JTable table) {
             }
         });
 
-        jButton19.setBackground(new java.awt.Color(237, 237, 237));
-        jButton19.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/icons8-refresh-64.png"))); // NOI18N
-        jButton19.setText("Làm mới");
-
         javax.swing.GroupLayout PanelHoaDonLayout = new javax.swing.GroupLayout(PanelHoaDon);
         PanelHoaDon.setLayout(PanelHoaDonLayout);
         PanelHoaDonLayout.setHorizontalGroup(
@@ -2272,16 +2403,7 @@ public void exportExcel(JTable table) {
                 .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(380, 380, 380))
             .addGroup(PanelHoaDonLayout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(PanelHoaDonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane5)
-                    .addComponent(jScrollPane4))
-                .addContainerGap())
-            .addGroup(PanelHoaDonLayout.createSequentialGroup()
-                .addGroup(PanelHoaDonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanelHoaDonLayout.createSequentialGroup()
-                        .addGap(410, 410, 410)
-                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(PanelHoaDonLayout.createSequentialGroup()
                         .addGap(76, 76, 76)
                         .addGroup(PanelHoaDonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2292,14 +2414,20 @@ public void exportExcel(JTable table) {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(PanelHoaDonLayout.createSequentialGroup()
-                                .addComponent(jButton47, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(95, 95, 95)
-                                .addComponent(jButton48, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(124, 124, 124)
-                                .addComponent(jButton19)
-                                .addGap(56, 56, 56)
-                                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGap(38, 38, 38)
+                                .addComponent(jButton48, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(255, 255, 255)
+                                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(PanelHoaDonLayout.createSequentialGroup()
+                        .addGap(410, 410, 410)
+                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(85, Short.MAX_VALUE))
+            .addGroup(PanelHoaDonLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(PanelHoaDonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane5)
+                    .addComponent(jScrollPane4))
+                .addContainerGap())
         );
         PanelHoaDonLayout.setVerticalGroup(
             PanelHoaDonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2312,12 +2440,10 @@ public void exportExcel(JTable table) {
                         .addComponent(jLabel24))
                     .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(PanelHoaDonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton47, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(PanelHoaDonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton48, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(14, 14, 14)
+                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
                 .addComponent(jLabel21)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2464,9 +2590,9 @@ public void exportExcel(JTable table) {
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(PanelTaikhoanLayout.createSequentialGroup()
                                 .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(66, 66, 66)
+                                .addGap(65, 65, 65)
                                 .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(66, 66, 66)
+                                .addGap(67, 67, 67)
                                 .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(66, 66, 66)
                                 .addComponent(jButton33)
@@ -2484,15 +2610,19 @@ public void exportExcel(JTable table) {
                     .addGroup(PanelTaikhoanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jTextField34, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(PanelTaikhoanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton33, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(PanelTaikhoanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PanelTaikhoanLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(PanelTaikhoanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton33, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(PanelTaikhoanLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(28, 28, 28)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 317, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -2589,6 +2719,25 @@ public void exportExcel(JTable table) {
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
         // TODO add your handling code here:
+        int i = tblTK.getSelectedRow();
+        if (i == -1) {
+            JOptionPane.showMessageDialog(rootPane, "vui lòng chọn dòng cần sửa");
+
+        } else {           
+            select = (int) modelqlTK.getValueAt(i, 0) ;
+            EditTK.setVisible(true);  
+            jTextField51.setText(String.valueOf(tblTK.getValueAt(i, 0)) );
+            jTextField52.setText((String) tblTK.getValueAt(i, 1));
+            jTextField54.setText((String) tblTK.getValueAt(i, 2));
+            jTextField53.setText( tblTK.getValueAt(i, 3).toString());            
+            if ("Admin".equals((String)tblTK.getValueAt(i,4))) {
+                jRadioButton5.setSelected(true);
+            }else if ("Nhân viên".equals((String)tblTK.getValueAt(i, 4))) {
+                jRadioButton6.setSelected(true);
+            }        
+        }
+        EditTK.pack();
+        EditTK.setLocationRelativeTo(null);
     }//GEN-LAST:event_jButton32ActionPerformed
 
     private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
@@ -2797,7 +2946,7 @@ public void exportExcel(JTable table) {
         if (i == -1) {
             JOptionPane.showMessageDialog(rootPane, "vui lòng chọn dòng cần xóa");
 
-        } else if (JOptionPane.showConfirmDialog(this, "Bạn chắc chắn muốn xóa nhân viên này? ", "Confirm", JOptionPane.YES_OPTION, JOptionPane.NO_OPTION) == JOptionPane.YES_OPTION) {
+        } else if (JOptionPane.showConfirmDialog(this, "Bạn chắc chắn muốn phim viên này? ", "Confirm", JOptionPane.YES_OPTION, JOptionPane.NO_OPTION) == JOptionPane.YES_OPTION) {
             select = (int) tblPhimNV.getModel().getValueAt(i, 0);
             if (new phimBUS().DeletePhim(select)) {
 
@@ -3262,10 +3411,6 @@ public void exportExcel(JTable table) {
         tblHD.setModel(tbModel);
     }//GEN-LAST:event_jButton18ActionPerformed
 
-    private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton47ActionPerformed
-
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         // TODO add your handling code here:
         DefaultTableModel tbModel = new DefaultTableModel();
@@ -3298,6 +3443,62 @@ public void exportExcel(JTable table) {
         }
         tblKH.setModel(tbModel);
     }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
+        // TODO add your handling code here:
+        String select = "";
+        int i = tblHD.getSelectedRow();
+        if (i == -1) {
+            JOptionPane.showMessageDialog(rootPane, "vui lòng chọn dòng cần xóa");
+
+        } else if (JOptionPane.showConfirmDialog(this, "Bạn chắc chắn muốn xóa hóa đơn này? ", "Confirm", JOptionPane.YES_OPTION, JOptionPane.NO_OPTION) == JOptionPane.YES_OPTION) {
+            select = (String) tblHD.getModel().getValueAt(i, 0);
+            if (new hoadonBUS().DeleteHD(select)) {
+
+                modelqlHD.removeRow(i);
+                tblHD.setModel(modelqlHD);
+                JOptionPane.showMessageDialog(rootPane, "Xóa thành công");
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Xóa thất bại");
+            }
+        }
+
+    }//GEN-LAST:event_jButton48ActionPerformed
+
+    private void jTextField51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField51ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField51ActionPerformed
+
+    private void jTextField54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField54ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField54ActionPerformed
+
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+        // TODO add your handling code here:
+        taiKhoan tk = new taiKhoan();
+        tk.setIdNV(Integer.parseInt(jTextField51.getText()));
+        tk.setTenDangNhap(jTextField52.getText());
+        tk.setmKhau(jTextField54.getText());
+        tk.setTenNV(jTextField53.getText());
+        tk.setChucVu(checkposition());
+        taiKhoanBUS tk_BUS = new taiKhoanBUS();
+        if (tk_BUS.EditTK(tk)) {
+                modelqlTK.setValueAt(jTextField51.getText(),tblTK.getSelectedRow(),0);
+                modelqlTK.setValueAt(jTextField52.getText(),tblTK.getSelectedRow(),1);
+                modelqlTK.setValueAt(jTextField54.getText(),tblTK.getSelectedRow(),2);
+                modelqlTK.setValueAt(jTextField53.getText(),tblTK.getSelectedRow(),3);
+                modelqlTK.setValueAt(checkposition(),tblTK.getSelectedRow(),4);
+                tblTK.setModel(modelqlTK);
+                showMessageDialog(rootPane, "Sửa thành công");
+                EditTK.dispose();
+        }else{
+                showMessageDialog(rootPane, "Sửa thất bại");
+        }
+    }//GEN-LAST:event_jButton21ActionPerformed
+
+    private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton5ActionPerformed
      
     /**
      * @param args the command line arguments
@@ -3342,6 +3543,7 @@ public void exportExcel(JTable table) {
     private javax.swing.JDialog EditKH;
     private javax.swing.JDialog EditNV;
     private javax.swing.JDialog EditPhim;
+    private javax.swing.JDialog EditTK;
     private javax.swing.JPanel MenuAdmin;
     private javax.swing.JPanel PanelHoaDon;
     private javax.swing.JPanel PanelKH;
@@ -3360,9 +3562,9 @@ public void exportExcel(JTable table) {
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton30;
     private javax.swing.JButton jButton31;
@@ -3381,7 +3583,6 @@ public void exportExcel(JTable table) {
     private javax.swing.JButton jButton43;
     private javax.swing.JButton jButton44;
     private javax.swing.JButton jButton45;
-    private javax.swing.JButton jButton47;
     private javax.swing.JButton jButton48;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
@@ -3407,6 +3608,8 @@ public void exportExcel(JTable table) {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -3426,6 +3629,8 @@ public void exportExcel(JTable table) {
     private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel20;
+    private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -3437,6 +3642,8 @@ public void exportExcel(JTable table) {
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JRadioButton jRadioButton5;
+    private javax.swing.JRadioButton jRadioButton6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -3489,6 +3696,10 @@ public void exportExcel(JTable table) {
     private javax.swing.JTextField jTextField49;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField50;
+    private javax.swing.JTextField jTextField51;
+    private javax.swing.JTextField jTextField52;
+    private javax.swing.JTextField jTextField53;
+    private javax.swing.JTextField jTextField54;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;

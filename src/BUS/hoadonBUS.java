@@ -26,4 +26,8 @@ public class hoadonBUS {
     return list;
     
 }
+
+    public boolean DeleteHD(String select) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

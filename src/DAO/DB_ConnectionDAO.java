@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package DAO;
 import java.sql.*;
 import javax.swing.JOptionPane;
@@ -13,13 +8,10 @@ public class DB_ConnectionDAO {
    private String passDB="";
    private String nameDatabase="rapphim1";
    private String urlDtb="jdbc:mysql://"+ipAddress+"/"+nameDatabase+"?useUnicode=true&characterEncoding=utf-8";
-   
     Connection conn=null;
     Statement sttm=null;
     ResultSet rs=null;
-
     public DB_ConnectionDAO() {
-        
         try {
             Class.forName("com.mysql.jdbc.Driver");
             conn=DriverManager.getConnection(urlDtb, userDB, passDB);
@@ -31,15 +23,13 @@ public class DB_ConnectionDAO {
             System.out.println("Kết nối Database thất bại!");
         }   
     }
-//    Hàm đóng kết nối 
-    public void closeConnection() {
+    public void closeConnection() { //    Hàm đóng kết nối 
         try {
             if(conn!=null){
             conn.close();
         }
         if (sttm!=null) {
-            sttm.close();
-            
+            sttm.close();  
         }
         if(rs!=null){
             rs.close();
@@ -48,7 +38,6 @@ public class DB_ConnectionDAO {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "-- ERROR! Không thể đóng kết nối tới " + nameDatabase + "\n" + e.getLocalizedMessage());
         }
-        
     }
     public boolean  checkConnect(){
         if(conn==null||sttm==null){
@@ -70,7 +59,6 @@ public class DB_ConnectionDAO {
         
         }
         return false;
-        
     }
 //    Ham sqlQuery(Slect)
     public ResultSet sqlQuery(String sql){
@@ -85,5 +73,4 @@ public class DB_ConnectionDAO {
         }
         return null;
     }
- 
 }

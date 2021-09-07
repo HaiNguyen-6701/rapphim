@@ -13,6 +13,10 @@ public class taiKhoanBUS {
         boolean rs=new taiKhoanDAO().AddTK(tk);
         return rs;
     }
+    public boolean EditTK(taiKhoan tk){
+        boolean rs=new taiKhoanDAO().EditTK(tk);
+        return rs;
+    }
     public boolean DeleteTK(int IdNV){
         boolean rs=new taiKhoanDAO().DeleteTK(IdNV);
         return rs;

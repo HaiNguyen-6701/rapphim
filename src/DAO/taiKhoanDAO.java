@@ -38,6 +38,13 @@ public class taiKhoanDAO {
         connectionDAO.closeConnection();
         return rs;
     }
+    public boolean EditTK(taiKhoan tk){
+        String sql="UPDATE `taikhoan` "
+                + "SET `idNV`='"+tk.getIdNV()+"',`tenDangNhap`='"+tk.getTenDangNhap()+"',`mKhau`='"+tk.getmKhau()+"',`TenNV`='"+tk.getTenNV()+"',`Chucvu`='"+tk.getChucVu()+"'";                
+        boolean rs=connectionDAO.sqlUpdate(sql);
+        connectionDAO.closeConnection();
+        return rs;
+    }
     public boolean DeleteTK(int IdNV){
             String sql="DELETE FROM `taikhoan` WHERE idNV='"+IdNV+"'";
         boolean rs=connectionDAO.sqlUpdate(sql);
